@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: mental-ai
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: openrouter/free
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PREMIUM_CODE
+        sync: false

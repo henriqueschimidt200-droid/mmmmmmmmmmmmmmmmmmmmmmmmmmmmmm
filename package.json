@@ -1,0 +1,8 @@
+{
+  "name":"mental-ai-web-free-openrouter",
+  "version":"1.1.0",
+  "private":true,
+  "scripts":{"start":"node server.js"},
+  "engines":{"node":">=20 <25"},
+  "dependencies":{"bcryptjs":"^2.4.3","better-sqlite3":"^11.10.0","dotenv":"^16.6.1","express":"^5.1.0","jsonwebtoken":"^9.0.2"}
+}
